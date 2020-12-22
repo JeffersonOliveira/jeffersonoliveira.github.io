@@ -13,12 +13,15 @@
 		    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
 		    
 		        alert("Bem-vindo ao sistema " + loginInformado);
-
+		        tentativas = 4;
 		    } 	else {
 		  	
 		  	      alert("Login inválido. Tente novamente!!! "+tentativas+" ° tentativa!");
+		  	      if (tentativas == 3 ) {
+		  	      	alert("Infelizmente você excedeu o número máximo de tentativas!<br> Enviamos um e-mail para você para confirmar seus dados.");
+		  	      }
 		  	      tentativas = tentativas +1;
 		    	}
 		}
-	 alert("Infelizmente você excedeu o número máximo de tentativas! Enviamos um e-mail para você para confirmar seus dados.");
+	 
 </script>
